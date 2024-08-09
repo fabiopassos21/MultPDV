@@ -1,0 +1,117 @@
+unit frmClienteCadastro;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, FireDAC.Stan.Intf,
+  FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS,
+  FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt,
+  Vcl.Imaging.pngimage, Vcl.StdCtrls, Vcl.Mask, Vcl.DBCtrls, Data.DB,
+  FireDAC.Comp.DataSet, FireDAC.Comp.Client, ACBrBase, ACBrSocket, ACBrCEP;
+
+type
+  TForm2 = class(TForm)
+    Panel1: TPanel;
+    FDTransaction1: TFDTransaction;
+    FDCliente: TDataSource;
+    FDQRYCliente: TFDQuery;
+    FDQRYClienteCODIGOCLIENTE: TFDAutoIncField;
+    FDQRYClienteRAZAOSOCIAL: TStringField;
+    FDQRYClienteFANTASIA: TStringField;
+    FDQRYClienteDOCUMENTO: TStringField;
+    FDQRYClienteINSCRICAOESTADUAL: TStringField;
+    FDQRYClienteCEP: TStringField;
+    FDQRYClienteLOGRADOURO: TStringField;
+    FDQRYClienteCOMPLEMENTO: TStringField;
+    FDQRYClienteMUNICIPIO: TStringField;
+    FDQRYClienteNUMERO: TStringField;
+    FDQRYClienteBAIRRO: TStringField;
+    FDQRYClienteUF: TStringField;
+    Panel2: TPanel;
+    Panel3: TPanel;
+    frmCliente: TLabel;
+    Panel4: TPanel;
+    Panel9: TPanel;
+    Panel10: TPanel;
+    Label3: TLabel;
+    Panel11: TPanel;
+    Shape2: TShape;
+    DBEdit2: TDBEdit;
+    Panel12: TPanel;
+    Label4: TLabel;
+    Panel13: TPanel;
+    Shape3: TShape;
+    DBEdit3: TDBEdit;
+    Panel14: TPanel;
+    Panel5: TPanel;
+    Panel6: TPanel;
+    Label1: TLabel;
+    Panel18: TPanel;
+    Shape6: TShape;
+    DBEdit4: TDBEdit;
+    Panel7: TPanel;
+    Label2: TLabel;
+    Panel8: TPanel;
+    Shape1: TShape;
+    DBEdit1: TDBEdit;
+    Panel21: TPanel;
+    Panel15: TPanel;
+    Label5: TLabel;
+    Panel16: TPanel;
+    Shape4: TShape;
+    DBEdit5: TDBEdit;
+    Panel17: TPanel;
+    Label6: TLabel;
+    Panel20: TPanel;
+    Shape7: TShape;
+    Image2: TImage;
+    Panel19: TPanel;
+    Shape5: TShape;
+    DBEdit6: TDBEdit;
+    Panel22: TPanel;
+    Panel23: TPanel;
+    Label7: TLabel;
+    Panel24: TPanel;
+    Shape8: TShape;
+    DBEdit7: TDBEdit;
+    Panel25: TPanel;
+    Label8: TLabel;
+    Panel27: TPanel;
+    Shape10: TShape;
+    DBEdit8: TDBEdit;
+    Panel26: TPanel;
+    Panel28: TPanel;
+    Label9: TLabel;
+    Panel29: TPanel;
+    Shape9: TShape;
+    DBEdit9: TDBEdit;
+    Panel30: TPanel;
+    Label10: TLabel;
+    Panel31: TPanel;
+    Shape11: TShape;
+    DBEdit10: TDBEdit;
+    Panel32: TPanel;
+    Label11: TLabel;
+    Panel33: TPanel;
+    Shape12: TShape;
+    DBEdit11: TDBEdit;
+    FDQRYClienteCadastro: TFDQuery;
+    ACBrCEP1: TACBrCEP;
+    DataSource1: TDataSource;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.dfm}
+
+uses frmBanco;
+
+end.

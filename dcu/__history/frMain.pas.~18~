@@ -1,0 +1,44 @@
+unit frMain;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.ExtCtrls;
+
+type
+  TForm3 = class(TForm)
+    MainMenu1: TMainMenu;
+    Cadastro1: TMenuItem;
+    Cliente1: TMenuItem;
+    Produto1: TMenuItem;
+    Proprio1: TMenuItem;
+    procedure Proprio1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form3: TForm3;
+
+implementation
+
+{$R *.dfm}
+
+uses frmProprio;
+
+procedure TForm3.Proprio1Click(Sender: TObject);
+var
+  Form2: TFrProprio;
+begin
+  Form2 := TFrProprio.Create(nil);
+
+    Form2.show;
+
+
+  end;
+
+
+end.

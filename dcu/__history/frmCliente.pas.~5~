@@ -1,0 +1,55 @@
+unit frmCliente;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, FireDAC.Stan.Intf,
+  FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS,
+  FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt,
+  FireDAC.Comp.DataSet, FireDAC.Comp.Client, Vcl.Imaging.pngimage, Vcl.ExtCtrls,
+  Vcl.StdCtrls, Vcl.Mask, Vcl.DBCtrls, Vcl.Grids, Vcl.DBGrids;
+
+type
+  TForm1 = class(TForm)
+    FDQryCliente: TFDQuery;
+    dsCliente: TDataSource;
+    FDQryClienteCODIGOCLIENTE: TFDAutoIncField;
+    FDQryClienteRAZAOSOCIAL: TStringField;
+    FDQryClienteFANTASIA: TStringField;
+    FDQryClienteDOCUMENTO: TStringField;
+    FDQryClienteINSCRICAOESTADUAL: TStringField;
+    FDQryClienteCEP: TStringField;
+    FDQryClienteLOGRADOURO: TStringField;
+    FDQryClienteCOMPLEMENTO: TStringField;
+    FDQryClienteMUNICIPIO: TStringField;
+    FDQryClienteNUMERO: TStringField;
+    FDQryClienteBAIRRO: TStringField;
+    FDQryClienteUF: TStringField;
+    Panel1: TPanel;
+    Label2: TLabel;
+    Panel2: TPanel;
+    frmCliente: TLabel;
+    DBGrid1: TDBGrid;
+    procedure FormShow(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+uses frMain, frmBanco;
+
+procedure TForm1.FormShow(Sender: TObject);
+begin
+FDQryCliente.Open();
+end;
+
+end.
